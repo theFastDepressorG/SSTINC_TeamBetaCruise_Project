@@ -17,6 +17,9 @@ struct ReportDataView: View {
                 NavigationLink(destination: ReportDataSubView2_PublicStatements()) {
                     Text("Public Statements")
                 }
+                NavigationLink(destination: ReportDataSubView3_HeistSceneEntryPoints()) {
+                    Text("Entry Points")
+                }
             }
             .navigationTitle("Data Reports")
         }
@@ -487,7 +490,6 @@ struct ReportDataSubView3_HeistSceneEntryPoints: View {
         }
     }
 }
-
 struct ReportDataSubView3_HeistSceneEntryPoints_1: View {
     var body: some View {
         NavigationStack {
@@ -506,7 +508,6 @@ struct ReportDataSubView3_HeistSceneEntryPoints_1: View {
         }
     }
 }
-
 struct ReportDataSubView3_HeistSceneEntryPoints_2: View {
     var body: some View {
         NavigationStack {
@@ -525,7 +526,6 @@ struct ReportDataSubView3_HeistSceneEntryPoints_2: View {
         }
     }
 }
-
 struct ReportDataSubView3_HeistSceneEntryPoints_3: View {
     var body: some View {
         NavigationStack {
