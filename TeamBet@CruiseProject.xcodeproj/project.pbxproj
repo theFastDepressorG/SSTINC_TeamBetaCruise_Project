@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		67E28DF42C8FFB9600E015CE /* SwiftPersistence in Frameworks */ = {isa = PBXBuildFile; productRef = 67E28DF32C8FFB9600E015CE /* SwiftPersistence */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		67F45B1E2C8EF3FA00BAFA85 /* TeamBet@CruiseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeamBet@CruiseProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E28DF42C8FFB9600E015CE /* SwiftPersistence in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = "TeamBet@CruiseProject";
 			packageProductDependencies = (
+				67E28DF32C8FFB9600E015CE /* SwiftPersistence */,
 			);
 			productName = "TeamBet@CruiseProject";
 			productReference = 67F45B1E2C8EF3FA00BAFA85 /* TeamBet@CruiseProject.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 67F45B152C8EF3FA00BAFA85;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				67E28DF22C8FFB9600E015CE /* XCRemoteSwiftPackageReference "SwiftPersistence" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 67F45B1F2C8EF3FA00BAFA85 /* Products */;
 			projectDirPath = "";
@@ -322,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67E28DF22C8FFB9600E015CE /* XCRemoteSwiftPackageReference "SwiftPersistence" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cheesetan/SwiftPersistence";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67E28DF32C8FFB9600E015CE /* SwiftPersistence */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E28DF22C8FFB9600E015CE /* XCRemoteSwiftPackageReference "SwiftPersistence" */;
+			productName = SwiftPersistence;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67F45B162C8EF3FA00BAFA85 /* Project object */;
 }

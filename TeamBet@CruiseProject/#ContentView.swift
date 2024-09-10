@@ -13,8 +13,8 @@ struct ContentView: View {
             Tab("Report Data", systemImage: "exclamationmark.bubble") {
                 ReportDataView()
             }
-            Tab("Analysis", systemImage: "text.page.badge.magnifyingglass") {
-                AnalysisView()
+            Tab("Analysis Logs", systemImage: "text.page.badge.magnifyingglass") {
+                AnalysisLogsView()
             }
         }
     }
