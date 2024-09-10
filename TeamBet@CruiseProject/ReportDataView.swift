@@ -95,6 +95,11 @@ struct ReportDataSubView1_Suspects_AvyanMehra: View {
                         .bold()
                     Text("iÇ 1030")
                 }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Stealth")
+                }
             }
             .navigationTitle("Avyan")
         }
@@ -140,6 +145,11 @@ struct ReportDataSubView1_Suspects_EvyanMehra: View {
                     Text("INCOIN Net Worth: ")
                         .bold()
                     Text("iÇ 130")
+                }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Stealth\nAgile")
                 }
             }
             .navigationTitle("Evyan")
@@ -187,6 +197,11 @@ struct ReportDataSubView1_Suspects_TedTan: View {
                         .bold()
                     Text("iÇ 2330")
                 }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Juggernaut\nStealth")
+                }
             }
             .navigationTitle("Ted")
         }
@@ -232,6 +247,11 @@ struct ReportDataSubView1_Suspects_Sanath: View {
                     Text("INCOIN Net Worth: ")
                         .bold()
                     Text("iÇ 11130")
+                }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Agile")
                 }
             }
             .navigationTitle("Sanath")
@@ -279,6 +299,11 @@ struct ReportDataSubView1_Suspects_Elmo: View {
                         .bold()
                     Text("iÇ 901")
                 }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Sesame Street")
+                }
             }
             .navigationTitle("Elmo")
         }
@@ -324,6 +349,11 @@ struct ReportDataSubView1_Suspects_RickAstley: View {
                     Text("INCOIN Net Worth: ")
                         .bold()
                     Text("iÇ 1305928")
+                }
+                HStack {
+                    Text("SKill Set: ")
+                        .bold()
+                    Text("Meme")
                 }
             }
             .navigationTitle("Rick")
@@ -544,6 +574,8 @@ struct ReportDataSubView3_HeistSceneEntryPoints_3: View {
         }
     }
 }
+
+//
 
 #Preview {
     ReportDataView()
