@@ -14,9 +14,9 @@ struct AddAnalysisView: View {
     @State private var logType = "suspect"
     
     @State private var log_suspect_fill_1 = ""
-    @State private var log_suspect_fill_2 = ""
+    @State private var log_suspect_fill_2 = "Fill in with details"
     
-    @State private var log_observation_fill_1 = ""
+    @State private var log_observation_fill_1 = "Fill in with observation"
     
     @State private var log_location_fill_1 = ""
     
