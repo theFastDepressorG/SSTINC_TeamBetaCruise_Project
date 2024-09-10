@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         TabView {
             Tab("Report Data", systemImage: "exclamationmark.bubble") {
-                
+                ReportDataView()
             }
             Tab("Analysis", systemImage: "text.page.badge.magnifyingglass") {
-                
+                AnalysisView()
             }
         }
     }
