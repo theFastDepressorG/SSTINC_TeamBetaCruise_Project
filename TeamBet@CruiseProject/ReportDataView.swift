@@ -360,12 +360,14 @@ struct ReportDataSubView2_PublicStatements: View {
                 NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_9()) {
                     Text("Statement 9")
                 }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_10()) {
+                    Text("Statement 10")
+                }
             }
             .navigationTitle("Public Statements")
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_1: View {
     var body: some View {
         NavigationStack {
@@ -376,7 +378,6 @@ struct ReportDataSubView2_PublicStatements_Statement_1: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_2: View {
     var body: some View {
         NavigationStack {
@@ -387,7 +388,6 @@ struct ReportDataSubView2_PublicStatements_Statement_2: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_3: View {
     var body: some View {
         NavigationStack {
@@ -398,7 +398,6 @@ struct ReportDataSubView2_PublicStatements_Statement_3: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_4: View {
     var body: some View {
         NavigationStack {
@@ -409,7 +408,6 @@ struct ReportDataSubView2_PublicStatements_Statement_4: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_5: View {
     var body: some View {
         NavigationStack {
@@ -420,7 +418,6 @@ struct ReportDataSubView2_PublicStatements_Statement_5: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_6: View {
     var body: some View {
         NavigationStack {
@@ -431,7 +428,6 @@ struct ReportDataSubView2_PublicStatements_Statement_6: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_7: View {
     var body: some View {
         NavigationStack {
@@ -442,7 +438,6 @@ struct ReportDataSubView2_PublicStatements_Statement_7: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_8: View {
     var body: some View {
         NavigationStack {
@@ -453,7 +448,6 @@ struct ReportDataSubView2_PublicStatements_Statement_8: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_9: View {
     var body: some View {
         NavigationStack {
@@ -464,7 +458,6 @@ struct ReportDataSubView2_PublicStatements_Statement_9: View {
         }
     }
 }
-
 struct ReportDataSubView2_PublicStatements_Statement_10: View {
     var body: some View {
         NavigationStack {
@@ -472,6 +465,82 @@ struct ReportDataSubView2_PublicStatements_Statement_10: View {
                 Text("I think Ted is the culprit or an accomplice")
             }
             .navigationTitle("Statement 10")
+        }
+    }
+}
+
+// Heist Scene Entry Points
+struct ReportDataSubView3_HeistSceneEntryPoints: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink(destination: ReportDataSubView3_HeistSceneEntryPoints_1()) {
+                    Text("Front Door")
+                }
+                NavigationLink(destination: ReportDataSubView3_HeistSceneEntryPoints_2()) {
+                    Text("Staff Back Door")
+                }
+                NavigationLink(destination: ReportDataSubView3_HeistSceneEntryPoints_3()) {
+                    Text("Roof")
+                }
+            }
+        }
+    }
+}
+
+struct ReportDataSubView3_HeistSceneEntryPoints_1: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Entry Point: ")
+                        .bold()
+                    Text("Front Door")
+                }
+                HStack {
+                    Text("Skills Required: ")
+                        .bold()
+                    Text("Juggernaut")
+                }
+            }
+        }
+    }
+}
+
+struct ReportDataSubView3_HeistSceneEntryPoints_2: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Entry Point: ")
+                        .bold()
+                    Text("Staff Back Door")
+                }
+                HStack {
+                    Text("Skills Required: ")
+                        .bold()
+                    Text("Stealth")
+                }
+            }
+        }
+    }
+}
+
+struct ReportDataSubView3_HeistSceneEntryPoints_3: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Entry Point: ")
+                        .bold()
+                    Text("Roof")
+                }
+                HStack {
+                    Text("Skills Required: ")
+                        .bold()
+                    Text("Agility\nStealth")
+                }
+            }
         }
     }
 }
