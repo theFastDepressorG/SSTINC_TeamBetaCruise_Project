@@ -333,7 +333,33 @@ struct ReportDataSubView2_PublicStatements: View {
     var body: some View {
         NavigationStack {
             List {
-            
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_1()) {
+                    Text("Statement 1")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_2()) {
+                    Text("Statement 2")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_3()) {
+                    Text("Statement 3")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_4()) {
+                    Text("Statement 4")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_5()) {
+                    Text("Statement 5")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_6()) {
+                    Text("Statement 6")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_7()) {
+                    Text("Statement 7")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_8()) {
+                    Text("Statement 8")
+                }
+                NavigationLink(destination: ReportDataSubView2_PublicStatements_Statement_9()) {
+                    Text("Statement 9")
+                }
             }
             .navigationTitle("Public Statements")
         }
@@ -380,6 +406,72 @@ struct ReportDataSubView2_PublicStatements_Statement_4: View {
                 Text("HOW IS TED A SUSPECT??? Ted is not guilty, i vouch for him")
             }
             .navigationTitle("Statement 4")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_5: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("Evyan and Avyan could be working together, you never know brothers, especially twins")
+            }
+            .navigationTitle("Statement 5")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_6: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("Avyan and Evyan is not suspicious, meanwhile Ted")
+            }
+            .navigationTitle("Statement 6")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_7: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("Sanath definitely stole the INCoin, I don't know how to explain why but I just know it")
+            }
+            .navigationTitle("Statement 7")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_8: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("ELMO!")
+            }
+            .navigationTitle("Statement 8")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_9: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("Never Gonna Give You Up, Never Gonna Let You Down")
+            }
+            .navigationTitle("Statement 9")
+        }
+    }
+}
+
+struct ReportDataSubView2_PublicStatements_Statement_10: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                Text("I think Ted is the culprit or an accomplice")
+            }
+            .navigationTitle("Statement 10")
         }
     }
 }
