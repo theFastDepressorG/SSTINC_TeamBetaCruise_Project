@@ -698,6 +698,11 @@ struct ReportDataSubView4_SusTransactions: View {
     }
 }
 
+// Events
+
+// Location
+
+
 #Preview {
     ReportDataView()
 }
