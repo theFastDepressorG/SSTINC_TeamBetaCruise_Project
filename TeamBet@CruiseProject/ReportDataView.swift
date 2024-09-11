@@ -11,6 +11,9 @@ struct ReportDataView: View {
     var body: some View {
         NavigationStack {
             List {
+                NavigationLink(destination: ReportDataSubView0_MainDetails()) {
+                    Text("Heist Details")
+                }
                 NavigationLink(destination: ReportDataSubView1_Suspects()) {
                     Text("Suspects")
                 }
@@ -20,8 +23,32 @@ struct ReportDataView: View {
                 NavigationLink(destination: ReportDataSubView3_HeistSceneEntryPoints()) {
                     Text("Entry Points")
                 }
+                NavigationLink(destination: ReportDataSubView4_SusTransactions()) {
+                    Text("Suspicious Bank Transactions")
+                }
             }
             .navigationTitle("Data Reports")
+        }
+    }
+}
+
+// Heist Main Details
+struct ReportDataSubView0_MainDetails: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Date Of Heist: ")
+                        .bold()
+                    Text("2 September 2024")
+                }
+                HStack {
+                    Text("Location Of Heist: ")
+                        .bold()
+                    Text("INCBANK")
+                }
+            }
+            .navigationTitle("Heist Details")
         }
     }
 }
@@ -575,7 +602,101 @@ struct ReportDataSubView3_HeistSceneEntryPoints_3: View {
     }
 }
 
-//
+// Recorded Suspicious Transactions
+struct ReportDataSubView4_SusTransactions: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                VStack {
+                    HStack {
+                        Text("Transaction Amount: ")
+                            .bold()
+                        Text("iÇ 8231")
+                    }
+                    HStack {
+                        Text("Date Of Transaction: ")
+                            .bold()
+                        Text("1 Sept 2024")
+                    }
+                    HStack {
+                        Text("Transactor: ")
+                            .bold()
+                        Text("Rick Astley")
+                    }
+                }
+                VStack {
+                    HStack {
+                        Text("Transaction Amount: ")
+                            .bold()
+                        Text("iÇ 3291")
+                    }
+                    HStack {
+                        Text("Date Of Transaction: ")
+                            .bold()
+                        Text("3 Sept 2024")
+                    }
+                    HStack {
+                        Text("Transactor: ")
+                            .bold()
+                        Text("Sanath")
+                    }
+                }
+                VStack {
+                    HStack {
+                        Text("Transaction Amount: ")
+                            .bold()
+                        Text("iÇ 4912")
+                    }
+                    HStack {
+                        Text("Date Of Transaction: ")
+                            .bold()
+                        Text("4 Sept 2024")
+                    }
+                    HStack {
+                        Text("Transactor: ")
+                            .bold()
+                        Text("Avyan")
+                    }
+                }
+                VStack {
+                    HStack {
+                        Text("Transaction Amount: ")
+                            .bold()
+                        Text("iÇ 1533")
+                    }
+                    HStack {
+                        Text("Date Of Transaction: ")
+                            .bold()
+                        Text("4 Sept 2024")
+                    }
+                    HStack {
+                        Text("Transactor: ")
+                            .bold()
+                        Text("Sanath")
+                    }
+                }
+                VStack {
+                    HStack {
+                        Text("Transaction Amount: ")
+                            .bold()
+                        Text("iÇ 2951")
+                    }
+                    HStack {
+                        Text("Date Of Transaction: ")
+                            .bold()
+                        Text("2 Sept 2024")
+                    }
+                    HStack {
+                        Text("Transactor: ")
+                            .bold()
+                        Text("Ted")
+                    }
+                }
+            }
+            .navigationTitle("Suspicious Transactions")
+        }
+    }
+}
 
 #Preview {
     ReportDataView()

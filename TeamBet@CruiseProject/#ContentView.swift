@@ -16,6 +16,9 @@ struct ContentView: View {
             Tab("Analysis Logs", systemImage: "text.page.badge.magnifyingglass") {
                 AnalysisLogsView()
             }
+            Tab("Final Report", systemImage: "checkmark.seal.text.page") {
+                FinalReportView()
+            }
         }
     }
 }
