@@ -26,6 +26,9 @@ struct ReportDataView: View {
                 NavigationLink(destination: ReportDataSubView4_SusTransactions()) {
                     Text("Suspicious Bank Transactions")
                 }
+                NavigationLink(destination: ReportDataSubView5_Events()) {
+                    Text("Events")
+                }
             }
             .navigationTitle("Data Reports")
         }
@@ -699,6 +702,16 @@ struct ReportDataSubView4_SusTransactions: View {
 }
 
 // Events
+struct ReportDataSubView5_Events: View {
+    var body: some View {
+        NavigationStack {
+            VStack {
+                
+            }
+            .navigationTitle("Events")
+        }
+    }
+}
 
 // Location
 
