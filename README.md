@@ -10,7 +10,10 @@ Our sources tell us that the mastermind has an accomplice, amount stolen is unkn
 
 - Find out who is the mastermind
 - Find out who is the accomplice
+- Find out any other people who was part of the heist
 - Find out how they got into Inc Bank
+- Find out how they got out of Inc Bank
+- Find out where they went
 - Find out how much was stolen
 - Report any additional information
 
