@@ -26,8 +26,8 @@ struct ReportDataView: View {
                 NavigationLink(destination: ReportDataSubView4_SusTransactions()) {
                     Text("Suspicious Bank Transactions")
                 }
-                NavigationLink(destination: ReportDataSubView5_Events()) {
-                    Text("Events")
+                NavigationLink(destination: ReportDataSubView5_CrimeScene()) {
+                    Text("Crime Scenes")
                 }
             }
             .navigationTitle("Data Reports")
@@ -702,13 +702,100 @@ struct ReportDataSubView4_SusTransactions: View {
 }
 
 // Events
-struct ReportDataSubView5_Events: View {
+struct ReportDataSubView5_CrimeScene: View {
     var body: some View {
         NavigationStack {
-            VStack {
+            List {
                 
             }
-            .navigationTitle("Events")
+            .navigationTitle("Crime Scenes")
+        }
+    }
+}
+
+struct ReportDataSubView5_CrimeScene_1: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Scene 1")
+                        .bold()
+                }
+                HStack {
+                    Text("Event Description: ")
+                        .bold()
+                    Text("Broken Window")
+                }
+                HStack {
+                    Text("Source: ")
+                        .bold()
+                    Text("Incvestigators")
+                }
+                HStack {
+                    Text("Biometrics: ")
+                        .bold()
+                    Text("Ted\nElmo")
+                }
+            }
+            .navigationTitle("Scene 1")
+        }
+    }
+}
+
+struct ReportDataSubView5_CrimeScene_2: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Scene 2")
+                        .bold()
+                }
+                HStack {
+                    Text("Event Description: ")
+                        .bold()
+                    Text("Explosive Case")
+                }
+                HStack {
+                    Text("Source: ")
+                        .bold()
+                    Text("Witness")
+                }
+                HStack {
+                    Text("Biometrics: ")
+                        .bold()
+                    Text("Nil")
+                }
+            }
+            .navigationTitle("Scene 2")
+        }
+    }
+}
+
+struct ReportDataSubView5_CrimeScene_3: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Scene 3")
+                        .bold()
+                }
+                HStack {
+                    Text("Event Description: ")
+                        .bold()
+                    Text("")
+                }
+                HStack {
+                    Text("Source: ")
+                        .bold()
+                    Text("Incvestigators")
+                }
+                HStack {
+                    Text("Biometrics: ")
+                        .bold()
+                    Text("Ted\nElmo")
+                }
+            }
+            .navigationTitle("Scene 3")
         }
     }
 }
