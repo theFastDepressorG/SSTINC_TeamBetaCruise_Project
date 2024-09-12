@@ -525,7 +525,7 @@ struct ReportDataSubView2_PublicStatements_Statement_10: View {
     var body: some View {
         NavigationStack {
             List {
-                Text("I think Ted is the culprit or an accomplice")
+                Text("I think Ashvik is an accomplice")
             }
             .navigationTitle("Statement 10")
         }
