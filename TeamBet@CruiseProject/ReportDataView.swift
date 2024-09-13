@@ -722,7 +722,7 @@ struct ReportDataSubView5_CrimeScene_1: View {
                         .bold()
                 }
                 HStack {
-                    Text("Event Description: ")
+                    Text("Scene Description: ")
                         .bold()
                     Text("Broken Window")
                 }
@@ -751,7 +751,7 @@ struct ReportDataSubView5_CrimeScene_2: View {
                         .bold()
                 }
                 HStack {
-                    Text("Event Description: ")
+                    Text("Scene Description: ")
                         .bold()
                     Text("Explosive Case")
                 }
@@ -780,7 +780,7 @@ struct ReportDataSubView5_CrimeScene_3: View {
                         .bold()
                 }
                 HStack {
-                    Text("Event Description: ")
+                    Text("Scene Description: ")
                         .bold()
                     Text("")
                 }
