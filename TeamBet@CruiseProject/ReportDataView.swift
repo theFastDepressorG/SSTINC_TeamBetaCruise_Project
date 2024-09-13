@@ -29,6 +29,9 @@ struct ReportDataView: View {
                 NavigationLink(destination: ReportDataSubView5_CrimeScene()) {
                     Text("Crime Scenes")
                 }
+                NavigationLink(destination: ReportDataSubView6_Location()) {
+                    Text("Locations")
+                }
             }
             .navigationTitle("Data Reports")
         }
@@ -868,7 +871,16 @@ struct ReportDataSubView5_CrimeScene_5: View {
 }
 
 // Location
-
+struct ReportDataSubView6_Location: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                
+            }
+            .navigationTitle("Locations")
+        }
+    }
+}
 
 #Preview {
     ReportDataView()
