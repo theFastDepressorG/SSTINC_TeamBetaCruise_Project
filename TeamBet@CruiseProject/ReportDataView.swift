@@ -706,13 +706,26 @@ struct ReportDataSubView5_CrimeScene: View {
     var body: some View {
         NavigationStack {
             List {
-                
+                NavigationLink(destination: ReportDataSubView5_CrimeScene_1()) {
+                    Text("Scene 1")
+                }
+                NavigationLink(destination: ReportDataSubView5_CrimeScene_2()) {
+                    Text("Scene 2")
+                }
+                NavigationLink(destination: ReportDataSubView5_CrimeScene_3()) {
+                    Text("Scene 3")
+                }
+                NavigationLink(destination: ReportDataSubView5_CrimeScene_4()) {
+                    Text("Scene 4")
+                }
+                NavigationLink(destination: ReportDataSubView5_CrimeScene_5()) {
+                    Text("Scene 5")
+                }
             }
             .navigationTitle("Crime Scenes")
         }
     }
 }
-
 struct ReportDataSubView5_CrimeScene_1: View {
     var body: some View {
         NavigationStack {
@@ -741,7 +754,6 @@ struct ReportDataSubView5_CrimeScene_1: View {
         }
     }
 }
-
 struct ReportDataSubView5_CrimeScene_2: View {
     var body: some View {
         NavigationStack {
@@ -770,7 +782,6 @@ struct ReportDataSubView5_CrimeScene_2: View {
         }
     }
 }
-
 struct ReportDataSubView5_CrimeScene_3: View {
     var body: some View {
         NavigationStack {
@@ -782,7 +793,7 @@ struct ReportDataSubView5_CrimeScene_3: View {
                 HStack {
                     Text("Scene Description: ")
                         .bold()
-                    Text("")
+                    Text("Windows Laptop")
                 }
                 HStack {
                     Text("Source: ")
@@ -796,6 +807,62 @@ struct ReportDataSubView5_CrimeScene_3: View {
                 }
             }
             .navigationTitle("Scene 3")
+        }
+    }
+}
+struct ReportDataSubView5_CrimeScene_4: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Scene 4")
+                        .bold()
+                }
+                HStack {
+                    Text("Scene Description: ")
+                        .bold()
+                    Text("Windows Laptop")
+                }
+                HStack {
+                    Text("Source: ")
+                        .bold()
+                    Text("Incvestigators")
+                }
+                HStack {
+                    Text("Biometrics: ")
+                        .bold()
+                    Text("Avyan")
+                }
+            }
+            .navigationTitle("Scene 4")
+        }
+    }
+}
+struct ReportDataSubView5_CrimeScene_5: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                HStack {
+                    Text("Scene 5")
+                        .bold()
+                }
+                HStack {
+                    Text("Scene Description: ")
+                        .bold()
+                    Text("Broken iPhone")
+                }
+                HStack {
+                    Text("Source: ")
+                        .bold()
+                    Text("Incvestigators")
+                }
+                HStack {
+                    Text("Biometrics: ")
+                        .bold()
+                    Text("Ashvik")
+                }
+            }
+            .navigationTitle("Scene 5")
         }
     }
 }
