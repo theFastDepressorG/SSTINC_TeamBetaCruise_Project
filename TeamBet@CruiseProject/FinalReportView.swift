@@ -33,7 +33,7 @@ struct FinalReportView: View {
                             if nameExtraEntry == "Ashvik" {
                                 if entryPlace.lowercased().contains("window") {
                                     if amountStolen.contains("4912") {
-                                        
+                                        complete = true
                                     }
                                 }
                             }
