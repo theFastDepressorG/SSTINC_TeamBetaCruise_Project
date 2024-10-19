@@ -8,17 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var complete = false
+    
     var body: some View {
-        TabView {
-            Tab("Report Data", systemImage: "exclamationmark.bubble") {
-                ReportDataView()
+        if complete == false {
+            TabView {
+                Tab("Report Data", systemImage: "exclamationmark.bubble") {
+                    ReportDataView()
+                }
+                Tab("Analysis Logs", systemImage: "text.page.badge.magnifyingglass") {
+                    AnalysisLogsView()
+                }
+                Tab("Final Report", systemImage: "checkmark.seal.text.page") {
+                    FinalReportView(complete: $complete)
+                }
             }
-            Tab("Analysis Logs", systemImage: "text.page.badge.magnifyingglass") {
-                AnalysisLogsView()
-            }
-            Tab("Final Report", systemImage: "checkmark.seal.text.page") {
-                FinalReportView()
-            }
+        } else {
+            Text("You have successfully completed the challenge report!")
+                .bold()
         }
     }
 }
