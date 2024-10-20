@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ReportDataView: View {
     var body: some View {
@@ -872,11 +873,20 @@ struct ReportDataSubView5_CrimeScene_5: View {
 
 // Location
 struct ReportDataSubView6_Location: View {
+    
+    let sstinc = CLLocationCoordinate2D(latitude: 1.3135874221525474, longitude: 103.77418115735085)
+    let NUSHIGH = CLLocationCoordinate2D(latitude: 1.3072548134694302, longitude: 103.76939778797563)
+    let SP = CLLocationCoordinate2D(latitude: 1.3100645703012077, longitude: 103.77752869247757)
+    @State var camera: MapCameraPosition = .automatic
+    
     var body: some View {
         NavigationStack {
-            List {
-                
+            Map(position: $camera) {
+                Marker("SST INC", coordinate: sstinc)
+                Marker("NUS HIGH", coordinate: NUSHIGH)
+                Marker("SINGAPORE POLY", coordinate: SP)
             }
+            .mapStyle(.imagery)
             .navigationTitle("Locations")
         }
     }
