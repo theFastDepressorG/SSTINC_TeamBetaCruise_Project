@@ -882,7 +882,7 @@ struct ReportDataSubView6_Location: View {
     var body: some View {
         NavigationStack {
             Map(position: $camera) {
-                Marker("SST INC", coordinate: sstinc)
+                Marker("SST INC Window", coordinate: sstinc)
                 Marker("NUS HIGH", coordinate: NUSHIGH)
                 Marker("SINGAPORE POLY", coordinate: SP)
             }
