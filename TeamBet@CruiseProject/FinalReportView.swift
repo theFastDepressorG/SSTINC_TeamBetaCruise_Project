@@ -17,29 +17,31 @@ struct FinalReportView: View {
     @Binding var complete: Bool
     
     var body: some View {
-        VStack {
-            List {
-                Section("Final Suspects") {
-                    TextField("Main Suspect", text: $nameEntry)
-                    TextField("Accomplice Suspect", text: $nameExtraEntry)
-                }
-                Section("Heist Details") {
-                    TextField("Entry Location", text: $entryPlace)
-                    TextField("Amount Stolen", text: $amountStolen)
-                }
-                Section {
-                    Button("Complete Report") {
-                        if nameEntry == "Avyan" {
-                            if nameExtraEntry == "Ashvik" {
-                                if entryPlace.lowercased().contains("window") {
-                                    if amountStolen.contains("4912") {
-                                        complete = true
+        NavigationStack {
+            VStack {
+                List {
+                    Section("Final Suspects") {
+                        TextField("Main Suspect", text: $nameEntry)
+                        TextField("Accomplice Suspect", text: $nameExtraEntry)
+                    }
+                    Section("Heist Details") {
+                        TextField("Entry Location", text: $entryPlace)
+                        TextField("Amount Stolen", text: $amountStolen)
+                    }
+                    Section {
+                        Button("Complete Report") {
+                            if nameEntry == "Avyan" {
+                                if nameExtraEntry == "Ashvik" {
+                                    if entryPlace.lowercased().contains("window") {
+                                        if amountStolen.contains("4912") {
+                                            complete = true
+                                        }
                                     }
                                 }
                             }
                         }
+                        .foregroundStyle(.green)
                     }
-                    .foregroundStyle(.green)
                 }
             }
             .navigationTitle("Final Report")
